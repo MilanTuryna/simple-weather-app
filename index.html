@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <noscript>
+        <style type="text/css">
+            [data-aos] {
+                opacity: 1 !important;
+                transform: translate(0) scale(1) !important;
+            }
+        </style>
+    </noscript>
+</head>
+<body>
+<div id="app">
+<main>
+    <div class="search-box" data-aos="fade-down" data-aos-duration="1500">
+        <input
+                type="text"
+                class="search-bar"
+                id="search-bar"
+                placeholder="Place, city.."/>
+        <img width="30px" id="submit" src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Search_font_awesome.svg">
+    </div>
+    <div style="clear: both;"></div>
+    <section id="weather-id">
+    </section>
+</main>
+</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+<script>AOS.init();</script>
+<script type="text/template" id="weather--result">
+    <div class="weather-wrap" data-aos="fade-down" data-aos-duration="1500">
+        <div class="location-box">
+            <div class="location">{{city}}, {{country}}</div>
+            <div class="date">{{date}}</div>
+        </div>
+
+        <div class="weather-box">
+            <div class="temp">{{temp}}°c</div>
+            <div class="weather">{{status}}</div>
+        </div>
+    </div>
+</script>
+</html>
