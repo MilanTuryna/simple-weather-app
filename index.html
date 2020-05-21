@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Počasí - turyna.eu</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -24,7 +24,7 @@
                 type="text"
                 class="search-bar"
                 id="search-bar"
-                placeholder="Place, city.."/>
+                placeholder="Zadejte polohu"/>
         <img width="30px" id="submit" src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Search_font_awesome.svg">
     </div>
     <div style="clear: both;"></div>
@@ -34,7 +34,8 @@
 </div>
 </body>
 <script src="js/api.js"></script>
-<script src="js/main.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/weather.js"></script>
 <script>AOS.init();</script>
 <script type="text/template" id="weather--result">
     <div class="weather-wrap" data-aos="fade-down" data-aos-duration="1500">
