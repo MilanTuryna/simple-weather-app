@@ -7,7 +7,6 @@ const API = {
 };
 
 const settings =  {
-    keypress: 'Enter',
     search: document.getElementById('search-bar'),
     lang: 'cz',
     diacritic: {
